@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Haaland.de | Project Hub</title>
+    <meta name="description" content="Haaland.de - A curated project directory showcasing innovative digital solutions, from data analytics to immersive VR experiences."/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ffffff",
+                        "background-dark": "#0a0a0a",
+                        "card-bg": "#111111",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-white font-display antialiased;
+            }
+        }
+        .project-card:hover .project-description {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .project-card .project-description {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease-out;
+        }
+        /* Custom scrollbar for dark theme */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-background-dark">
+    <div class="flex flex-col min-h-screen">
+        <header class="w-full p-8 flex justify-between items-center z-50">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-black tracking-tighter uppercase">Haaland.de</span>
+            </div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold">
+                Project Directory 2026
+            </div>
+        </header>
+
+        <main class="flex-grow w-full px-6 pb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-full">
+                
+                <!-- Project 1: Quantum Analytics - Dark tech dashboard -->
+                <a class="project-card group relative overflow-hidden aspect-video lg:aspect-square bg-card-bg border border-zinc-800 flex flex-col justify-end p-8 transition-all hover:border-zinc-500" href="#">
+                    <div class="absolute inset-0 z-0 opacity-40 group-hover:opacity-20 transition-opacity grayscale group-hover:grayscale-0">
+                        <img alt="Quantum Analytics" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000"/>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-3xl font-black uppercase tracking-tighter">Quantum Analytics</h3>
+                            <span class="material-symbols-outlined text-2xl">north_east</span>
+                        </div>
+                        <p class="project-description text-zinc-400 text-sm max-w-xs leading-relaxed">
+                            High-performance real-time data visualization engine for crypto trading and market analysis.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Project 2: Neon Hub - Dark phone/app mockup -->
+                <a class="project-card group relative overflow-hidden aspect-video lg:aspect-square bg-card-bg border border-zinc-800 flex flex-col justify-end p-8 transition-all hover:border-zinc-500" href="#">
+                    <div class="absolute inset-0 z-0 opacity-40 group-hover:opacity-20 transition-opacity grayscale group-hover:grayscale-0">
+                        <img alt="Neon Hub" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1000"/>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-3xl font-black uppercase tracking-tighter">Neon Hub</h3>
+                            <span class="material-symbols-outlined text-2xl">north_east</span>
+                        </div>
+                        <p class="project-description text-zinc-400 text-sm max-w-xs leading-relaxed">
+                            Community platform for digital artists featuring high-performance live portfolio streaming.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Project 3: Aura VR - Dark architecture -->
+                <a class="project-card group relative overflow-hidden aspect-video lg:aspect-square bg-card-bg border border-zinc-800 flex flex-col justify-end p-8 transition-all hover:border-zinc-500" href="#">
+                    <div class="absolute inset-0 z-0 opacity-40 group-hover:opacity-20 transition-opacity grayscale group-hover:grayscale-0">
+                        <img alt="Aura VR" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1000"/>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-3xl font-black uppercase tracking-tighter">Aura VR</h3>
+                            <span class="material-symbols-outlined text-2xl">north_east</span>
+                        </div>
+                        <p class="project-description text-zinc-400 text-sm max-w-xs leading-relaxed">
+                            Immersive architectural visualization and browser-based WebGL walkthroughs.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Project 4: Ember Wallet - Dark phone mockup -->
+                <a class="project-card group relative overflow-hidden aspect-video lg:aspect-square bg-card-bg border border-zinc-800 flex flex-col justify-end p-8 transition-all hover:border-zinc-500" href="#">
+                    <div class="absolute inset-0 z-0 opacity-40 group-hover:opacity-20 transition-opacity grayscale group-hover:grayscale-0">
+                        <img alt="Ember Wallet" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&q=80&w=1000"/>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-3xl font-black uppercase tracking-tighter">Ember Wallet</h3>
+                            <span class="material-symbols-outlined text-2xl">north_east</span>
+                        </div>
+                        <p class="project-description text-zinc-400 text-sm max-w-xs leading-relaxed">
+                            Minimalist multi-chain wallet focused on security, clarity, and one-click staking.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Connect Card -->
+                <a class="project-card group relative overflow-hidden aspect-video lg:aspect-square bg-zinc-900 border border-zinc-800 flex flex-col items-center justify-center p-8 transition-all hover:bg-white hover:text-black" href="mailto:hello@haaland.de">
+                    <div class="text-center">
+                        <span class="material-symbols-outlined text-4xl mb-4">mail</span>
+                        <h3 class="text-xl font-bold uppercase tracking-widest">Connect</h3>
+                    </div>
+                </a>
+
+                <!-- Status Card -->
+                <div class="project-card relative overflow-hidden aspect-video lg:aspect-square bg-black border border-zinc-800 flex flex-col justify-between p-8">
+                    <div class="text-[10px] uppercase tracking-widest text-zinc-600 font-bold">Status</div>
+                    <div class="text-sm font-bold flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        AVAILABLE FOR PROJECTS
+                    </div>
+                    <div class="flex gap-4">
+                        <a class="text-zinc-500 hover:text-white transition-colors font-bold text-[10px]" href="#">X</a>
+                        <a class="text-zinc-500 hover:text-white transition-colors font-bold text-[10px]" href="#">GH</a>
+                        <a class="text-zinc-500 hover:text-white transition-colors font-bold text-[10px]" href="#">LI</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="w-full p-8 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-zinc-600">
+            <div>© <span id="year"></span> HAALAND</div>
+            <div class="hidden md:block">Engineered for performance and clarity</div>
+            <div class="flex gap-4">
+                <a class="hover:text-white transition-colors" href="#">Legal</a>
+                <a class="hover:text-white transition-colors" href="#">Privacy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
